@@ -1,16 +1,17 @@
 import { Experience, Project, SkillCategory } from './types';
 
 export const SOCIAL_LINKS = {
-  github: "https://github.com/0mer-Ashraf-ML",
-  linkedin: "https://www.linkedin.com/in/omar-ashraf-711b91242/",
-  email: "omarrashraf001@gmail.com",
-  phone: "+92 304 608 7338"
+  github: "https://github.com/ziamuneeb097/",
+  linkedin: "https://www.linkedin.com/in/muneeb-zia-3620ba227/",
+  email: "muneebzia632@gmail.com",
+  phone: "+92 326 0029505"
 };
 
 export const SKILLS: SkillCategory[] = [
   {
     name: "AI & Machine Learning",
-    skills: ["LLMs (GPT-4, Llama-2, Mistral)", "RAG", "Computer Vision (YOLO, U-Net)", "NLP (BERT, Transformers)", "LangChain", "LlamaIndex", "HuggingFace", "PyTorch", "TensorFlow"]
+    skills: ["LLMs (GPT-4, Llama-2, Mistral)", "RAG", "Workflow Automation (n8n)",
+      "AI Automation & Orchestration (n8n + APIs)", "Computer Vision (YOLO, U-Net)", "NLP (BERT, Transformers)", "LangChain", "LlamaIndex", "HuggingFace", "PyTorch", "TensorFlow"]
   },
   {
     name: "Backend & MLOps",
@@ -25,40 +26,42 @@ export const SKILLS: SkillCategory[] = [
 export const EXPERIENCE: Experience[] = [
   {
     id: "solgenci",
-    company: "Solgenci",
+    company: "Visionerds",
     role: "Senior AI/ML Engineer",
-    period: "2023 - Present",
+    period: "January 2021 - Present",
     description: [
       "Specializing in developing advanced, scalable AI-driven solutions using OpenAI, LangChain, and RAG pipelines.",
-      "Designed modular architectures for chatbots and white-label AI solutions, reducing deployment time significantly.",
-      "Optimized performance for LLM-based applications, ensuring high throughput and low latency."
+      "Developed an interpretable ML model using Scikit-learn, CatBoost, Lifelines, FBProphet, FAISS, and SHAP, ensuring it meets business monotonicity constraints.",
+      "Optimized performance for LLM-based applications, ensuring high throughput and low latency.",
+      "Drove best DevOps and MLOps practices for reliable ETL, feature generation, model training, and inference."
     ],
     tech: ["OpenAI", "LangChain", "FastAPI", "AWS", "RAG"]
   },
   {
     id: "senarios",
-    company: "Senarios",
-    role: "Data Scientist",
-    period: "2021 - 2023",
+    company: "Bramman Miami",
+    role: "Senior Python Developer",
+    period: "Oct 2020 - December 2021",
     description: [
       "Developed scalable Python code for complex AI applications, improving maintainability by 30%.",
       "Built end-to-end AI pipelines for edge deployment on Android/iOS using TensorFlow Lite and ONNX.",
-      "Achieved ~98% accuracy in face recognition and anti-spoofing systems using advanced CV techniques."
+      "Achieved ~98% accuracy in face recognition and anti-spoofing systems using advanced CV techniques.",
+      "Communicated with clients to ensure business goals were accurately translated intodata science and machine learning tasks."
     ],
     tech: ["TensorFlow", "PyTorch", "Mobile AI", "Face Recognition"]
   },
-  {
-    id: "ml1",
-    company: "Machine Learning 1",
-    role: "Junior Data Scientist",
-    period: "2019 - 2021",
-    description: [
-      "Led the development of a customer support Voicebot reducing latency to 3-4 seconds.",
-      "Worked on Text-to-Image models (Stable Diffusion) for website design automation.",
-      "Built Document Understanding Transformers for automated invoice processing."
-    ],
-    tech: ["Voice AI", "Stable Diffusion", "OCR", "Twilio"]
-  }
+  // {
+  //   id: "ml1",
+  //   company: "Machine Learning 1",
+  //   role: "Junior Data Scientist",
+  //   period: "2019 - 2021",
+  //   description: [
+  //     "Led the development of a customer support Voicebot reducing latency to 3-4 seconds.",
+  //     "Worked on Text-to-Image models (Stable Diffusion) for website design automation.",
+  //     "Built Document Understanding Transformers for automated invoice processing."
+  //   ],
+  //   tech: ["Voice AI", "Stable Diffusion", "OCR", "Twilio"]
+  // }
 ];
 
 export const PROJECTS: Project[] = [

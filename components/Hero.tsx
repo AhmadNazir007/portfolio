@@ -21,7 +21,7 @@ const Hero = () => {
           >
             <h2 className="text-primary font-mono text-lg mb-4 tracking-wide">Hello, I'm</h2>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Omar Ashraf.
+              Muneeb Zia.
               <span className="block text-slate-400">I build intelligent systems.</span>
             </h1>
           </motion.div>
@@ -32,7 +32,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-slate-400 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed"
           >
-            Senior Machine Learning Engineer specializing in <span className="text-primary">Generative AI</span>, <span className="text-primary">RAG Architectures</span>, and <span className="text-primary">Computer Vision</span>. I bridge the gap between cutting-edge research and scalable production systems.
+            Senior Machine Learning Engineer with deep expertise in modern <span className="text-primary">Generative AI</span>, <span className="text-primary">AI Automation</span>, and <span className="text-primary">Big Data Processing</span>. I bridge the gap between cutting-edge research and scalable production systems.
           </motion.p>
 
           <motion.div
