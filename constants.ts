@@ -1,10 +1,10 @@
 import { Experience, Project, SkillCategory } from './types';
 
 export const SOCIAL_LINKS = {
-  github: "https://github.com/ziamuneeb097/",
-  linkedin: "https://www.linkedin.com/in/muneeb-zia-3620ba227/",
-  email: "muneebzia632@gmail.com",
-  phone: "+92 326 0029505"
+  github: "https://github.com/AhmadNazir007",
+  linkedin: "https://www.linkedin.com/in/ahmadnazirofficial/",
+  email: "ahmadnazir866@gmail.com",
+  phone: "+92 3067199507"
 };
 
 export const SKILLS: SkillCategory[] = [
@@ -27,28 +27,28 @@ export const EXPERIENCE: Experience[] = [
   {
     id: "solgenci",
     company: "Visionerds",
-    role: "Senior AI/ML Engineer",
-    period: "January 2021 - Present",
+    role: "AI Full Stack Engineer",
+    period: "January 2025 - Present",
     description: [
       "Specializing in developing advanced, scalable AI-driven solutions using OpenAI, LangChain, and RAG pipelines.",
       "Developed an interpretable ML model using Scikit-learn, CatBoost, Lifelines, FBProphet, FAISS, and SHAP, ensuring it meets business monotonicity constraints.",
       "Optimized performance for LLM-based applications, ensuring high throughput and low latency.",
       "Drove best DevOps and MLOps practices for reliable ETL, feature generation, model training, and inference."
     ],
-    tech: ["OpenAI", "LangChain", "FastAPI", "AWS", "RAG"]
+    tech: ["OpenAI", "LangChain", "FastAPI", "AWS", "RAG", "Azure", "Docker", "Git", "Python", "FastAPI", "Django", "Docker", "AWS (EC2, S3, SageMaker)", "Pinecone", "Supabase", "Redis", "Celery", "CI/CD"]
   },
   {
     id: "senarios",
-    company: "Bramman Miami",
-    role: "Senior Python Developer",
-    period: "Oct 2020 - December 2021",
+    company: "Visionerds",
+    role: "Full Stack Developer",
+    period: "January 2024 - December 2024",
     description: [
-      "Developed scalable Python code for complex AI applications, improving maintainability by 30%.",
-      "Built end-to-end AI pipelines for edge deployment on Android/iOS using TensorFlow Lite and ONNX.",
-      "Achieved ~98% accuracy in face recognition and anti-spoofing systems using advanced CV techniques.",
-      "Communicated with clients to ensure business goals were accurately translated intodata science and machine learning tasks."
+      "Frontend / Full-Stack Developer with experience in building scalable and responsive web applications using React.js, Next.js, and Tailwind CSS.",
+      "Developed production-ready projects with a focus on performance, SEO optimization, and modern JavaScript (ES6+).",
+      "Collaborated with designers, product managers, and backend teams to deliver high-quality user interfaces.",
+      "Also contributed on the backend using NestJS to build RESTful APIs, authentication systems, and integrate frontend with backend services."
     ],
-    tech: ["TensorFlow", "PyTorch", "Mobile AI", "Face Recognition"]
+    tech: ["React", "Next.js", "Tailwind CSS", "NestJS", "TypeScript", "Node.js", "PostgreSQL", "MongoDB", "Git", "Seaborn", "Scikit-learn", "OpenCV", "Pandas", "NumPy"]
   },
   // {
   //   id: "ml1",

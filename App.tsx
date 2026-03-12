@@ -17,7 +17,7 @@ function App() {
       <Contact />
 
       <footer className="py-6 text-center text-slate-600 text-sm">
-        <p>&copy; {new Date().getFullYear()} Muneeb Zia. Built with React & Tailwind.</p>
+        <p>&copy; {new Date().getFullYear()} Ahmad Nazir. Built with React & Tailwind.</p>
       </footer>
     </main>
   );

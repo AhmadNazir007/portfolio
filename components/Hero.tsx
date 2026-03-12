@@ -21,7 +21,7 @@ const Hero = () => {
           >
             <h2 className="text-primary font-mono text-lg mb-4 tracking-wide">Hello, I'm</h2>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Muneeb Zia.
+              Ahmad Nazir.
               <span className="block text-slate-400">I build intelligent systems.</span>
             </h1>
           </motion.div>
