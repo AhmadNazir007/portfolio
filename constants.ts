@@ -66,133 +66,185 @@ export const EXPERIENCE: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
-    id: "structural-learning",
-    title: "AI-Powered Structural Learning Platform",
-    role: "Lead GenAI Engineer",
-    shortDescription: "An automated lesson planning backend using RAG, GPT-4, and the Structural Learning Framework.",
-    fullDescription: "Designed and implemented a production-ready microservice that automatically generates curriculum-aligned lesson plans. The system utilizes a Retrieval-Augmented Generation (RAG) pipeline to ground GPT-4 in real educational content, ensuring factual accuracy and adherence to the '33 thinking skills' framework.",
-    tags: ["GenAI", "RAG", "FastAPI", "Education"],
-    techStack: ["Python", "FastAPI", "GPT-4", "Pinecone", "Supabase", "AWS S3", "Docker", "AsyncIO"],
+    id: "creditbpo-ai",
+    title: "CreditBPO AI/ML Backend",
+    role: "AI Backend Engineer",
+    shortDescription: "AI-powered document extraction and financial data analysis microservice.",
+    fullDescription: "Built a production-ready FastAPI microservice for intelligent document processing and financial data extraction. The platform leverages Google Gemini AI for document understanding, Azure Blob Storage for file management, and MongoDB for persistent storage.",
+    tags: ["AI", "Document Processing", "Financial Analysis", "FastAPI"],
+    techStack: ["Python", "FastAPI", "Google Gemini", "MongoDB", "Azure Blob Storage", "Docker"],
     features: [
-      "Multi-step lesson generation based on cognitive complexity (Green/Blue/Red skills).",
-      "Advanced RAG pipeline with metadata filtering (Subject, Grade) in Pinecone.",
-      "Asynchronous architecture handling concurrent skill selection, retrieval, and generation.",
-      "Strict JSON output validation using Pydantic and auto-retries."
+      "AI-powered document extraction and classification.",
+      "Financial data analysis and summarization.",
+      "Azure Blob Storage integration for file management.",
+      "RESTful API architecture with scalable deployment."
     ],
     challenges: [
-      "Ensuring GPT-4 followed strict JSON schemas for frontend integration.",
-      "Balancing latency vs. quality (optimized to <5s generation).",
-      "Preventing hallucinations by grounding the model in 1000+ curriculum PDFs."
+      "Handling diverse document formats and layouts.",
+      "Maintaining extraction accuracy across financial documents.",
+      "Optimizing AI inference costs and response times."
     ],
     results: [
-      "Reduced lesson planning time from hours to seconds.",
-      "Achieved <$0.10 cost per lesson via token optimization.",
-      "Production deployment handling concurrent user requests with zero downtime."
+      "Automated document processing workflows.",
+      "Reduced manual data entry efforts significantly.",
+      "Production-ready scalable microservice architecture."
     ],
-    imageUrl: "/structural-learning.png"
+    imageUrl: "/creditbpo_project.png"
   },
   {
-    id: "id-fraud-detection",
-    title: "ID Document Processing & Fraud Detection",
-    role: "ML Engineer",
-    shortDescription: "End-to-end CV pipeline for ID segmentation, OCR, and forensic fraud detection.",
-    fullDescription: "Built a comprehensive computer vision pipeline to automate identity verification. The system detects ID cards, corrects perspective, extracts fields via OCR, and performs forensic analysis to detect tampering (face swaps, screen replays, photocopies).",
-    tags: ["Computer Vision", "Fraud Detection", "OCR", "Deep Learning"],
-    techStack: ["PyTorch", "TensorFlow", "U-Net", "YOLOv5", "Google Vision OCR", "OpenCV", "FastAPI"],
-    features: [
-      "U-Net based semantic segmentation for precise ID card localization.",
-      "YOLOv5 for detecting specific fields (Name, DOB, Photo) on the card.",
-      "Custom CNNs for detecting 'face paste' attacks and screen-replay (moire pattern) attacks.",
-      "Heuristic algorithms for orientation correction and perspective warping."
-    ],
-    challenges: [
-      "Handling varied lighting, glares, and background clutter.",
-      "Detecting high-quality digital forgeries that are invisible to the human eye.",
-      "Orchestrating multiple heavy models (Segmentation -> Detection -> OCR -> Fraud) within acceptable latency."
-    ],
-    results: [
-      "99.5% segmentation accuracy and 95% mAP on field detection.",
-      "Robust detection of screen-replay attacks and printed copies.",
-      "Successfully containerized complex mixed-framework (TF + PyTorch) environment."
-    ],
-    imageUrl: "/id-fraud-detection.png"
-  },
-  {
-    id: "convirza-ai",
-    title: "Convirza AI Conversation Analytics",
-    role: "ML Engineer",
-    shortDescription: "Scalable call tracking and analytics platform processing terabytes of audio.",
-    fullDescription: "Developed the AI engine for a call tracking platform that transcribes and analyzes phone calls in real-time. The system detects sentiment, sales outcomes, lead quality, and specific 'pain points' to help businesses optimize sales strategies.",
-    tags: ["NLP", "Audio Processing", "MLOps", "Analytics"],
-    techStack: ["BERT", "TorchServe", "OpenAI Whisper", "AssemblyAI", "Deepgram", "Kubernetes", "Redis"],
-    features: [
-      "Hybrid ASR strategy using AssemblyAI (accuracy), Deepgram (speed), and local Whisper (privacy).",
-      "Fine-tuned BERT models for sentiment analysis and intent classification.",
-      "Modular pipeline allowing client-specific model fine-tuning.",
-      "Real-time processing capability for live agent coaching."
-    ],
-    challenges: [
-      "Processing terabytes of audio data efficiently.",
-      "Handling domain-specific jargon across different industries (Healthcare vs. Automotive).",
-      "Ensuring HIPAA and GDPR compliance with on-premise model deployment options."
-    ],
-    results: [
-      "Processed millions of call minutes monthly.",
-      "Improved sentiment analysis accuracy to ~90%.",
-      "Enabled clients to increase sales revenue by automated lead scoring."
-    ],
-    imageUrl: "/convirza-ai.png"
-  },
-  {
-    id: "startup-ideation",
-    title: "Persona-Driven Startup Ideation",
+    id: "caremate",
+    title: "CareMate - NDIS Support Coordinator Assistant",
     role: "AI Engineer",
-    shortDescription: "AI platform that validates startup ideas by simulating customer personas and scraping live data.",
-    fullDescription: "A sophisticated tool that scrapes Reddit and LinkedIn to identify real user pain points, validates them using AI agents, and generates startup ideas with strategic 'lenses' (business models) applied.",
-    tags: ["Agents", "Web Scraping", "Product Design"],
-    techStack: ["Streamlit", "OpenAI GPT-4", "PRAW (Reddit)", "RapidAPI", "Pydantic"],
+    shortDescription: "AI-powered NDIS report generation platform for support coordinators.",
+    fullDescription: "Developed an AI-driven platform that helps NDIS Support Coordinators generate compliant reports quickly using OCR, Gemini AI, and document automation workflows.",
+    tags: ["Healthcare", "AI", "OCR", "Document Generation"],
+    techStack: ["Python", "FastAPI", "Streamlit", "Google Gemini", "OCR", "Uvicorn"],
     features: [
-      "Automated persona generation and 'Lens' application for idea variation.",
-      "Real-time scraping of Reddit/LinkedIn for pain point discovery.",
-      "Multi-agent architecture: Researcher, Validator, and Synthesizer agents.",
-      "Comprehensive report generation in JSON/CSV/Markdown."
+      "Automated Change of Circumstance reports.",
+      "Progress and Support Plan generation.",
+      "OCR-based document extraction.",
+      "NDIS-compliant reporting templates."
     ],
     challenges: [
-      "Structuring unstructured forum discussions into quantifiable pain points.",
-      "Managing API rate limits across multiple social platforms.",
-      "Creating a flexible 'Lens' system to pivot ideas programmatically."
+      "Maintaining compliance with NDIS reporting standards.",
+      "Extracting information from scanned documents.",
+      "Generating structured professional reports."
     ],
     results: [
-      "Generates 20+ validated ideas in under 5 minutes.",
-      "Provides data-backed market size and competition analysis.",
-      "Fully automated research workflow replacing weeks of manual work."
+      "Reduced report preparation time by over 80%.",
+      "Improved report consistency and compliance.",
+      "Enabled coordinators to focus on client outcomes."
     ],
-    imageUrl: "/startup-ideation.png"
+    imageUrl: "/caremate_project.png"
   },
   {
-    id: "real-estate-sms",
-    title: "AI Real Estate Lead Qualification",
-    role: "Full Stack AI Engineer",
-    shortDescription: "Django-based SMS marketing platform with AI automated responses.",
-    fullDescription: "A CRM-integrated system for luxury real estate agents that automates bulk SMS campaigns. It uses Google Gemini to handle inbound conversations, qualify leads, and schedule appointments automatically.",
-    tags: ["Automation", "CRM", "Chatbots"],
-    techStack: ["Django", "Celery", "Google Gemini", "SignalWire", "Follow Up Boss API"],
+    id: "parth-operation",
+    title: "PARTH Operation Management System",
+    role: "Full Stack Engineer",
+    shortDescription: "Internal order lifecycle management platform replacing manual Excel workflows.",
+    fullDescription: "Designed and developed a centralized order management platform that digitizes the complete customer order lifecycle, including order placement, vendor coordination, invoicing, payments, and tracking.",
+    tags: ["ERP", "Operations", "Automation", "Business Platform"],
+    techStack: ["React", "Next.js", "NestJS", "PostgreSQL", "TypeScript"],
     features: [
-      "AI conversation handler with memory and context awareness.",
-      "Automated CRM extraction and data entry (Follow Up Boss).",
-      "Rate-limited bulk SMS sending via Celery queues.",
-      "Price validation logic to filter unrealistic leads."
+      "End-to-end order lifecycle management.",
+      "Vendor coordination and workflow tracking.",
+      "Invoice and payment management.",
+      "Real-time order visibility dashboard."
     ],
     challenges: [
-      "Handling complex real estate negotiations via SMS.",
-      "Integrating disparate systems (CRM, SMS Gateway, AI) reliably.",
-      "Managing strict carrier rate limits."
+      "Migrating manual Excel-based processes.",
+      "Ensuring accurate order tracking.",
+      "Building scalable workflow automation."
     ],
     results: [
-      "Automated qualification for thousands of leads.",
-      "Seamless CRM integration reducing manual data entry.",
-      "High-engagement conversational agent that mimics human realtors."
+      "Improved operational efficiency significantly.",
+      "Centralized business operations data.",
+      "Reduced manual errors and delays."
     ],
-    imageUrl: "/real-estate-sms.png"
+    imageUrl: "/parth_project.png"
+  },
+  {
+    id: "maya-beauty-bag",
+    title: "Maya Beauty Bag AI",
+    role: "AI Full Stack Engineer",
+    shortDescription: "AI-powered beauty recommendation and skincare assistant.",
+    fullDescription: "Built an intelligent beauty assistant that provides personalized skincare recommendations, skin analysis, and customized beauty routines using AI and LLM technologies.",
+    tags: ["AI Assistant", "Beauty Tech", "LLM", "Recommendations"],
+    techStack: ["Python", "FastAPI", "OpenAI", "LangChain", "Deepgram", "Streamlit"],
+    features: [
+      "Personalized beauty product recommendations.",
+      "AI-powered skin analysis.",
+      "Voice and chat-based interactions.",
+      "Beauty routine optimization."
+    ],
+    challenges: [
+      "Creating accurate recommendation logic.",
+      "Handling conversational memory.",
+      "Integrating voice and text AI experiences."
+    ],
+    results: [
+      "Improved customer engagement through AI conversations.",
+      "Delivered personalized beauty experiences.",
+      "Scalable AI assistant architecture."
+    ],
+    imageUrl: "/maya_beauty_chatbot.png"
+  },
+  {
+    id: "florida-arbitration",
+    title: "Florida Arbitration Assistant",
+    role: "AI Engineer",
+    shortDescription: "Legal AI assistant for generating arbitration-ready complaints.",
+    fullDescription: "Developed an AI-powered legal assistant that generates structured arbitration complaints under FDCPA, FCCPA, and FCRA regulations using RAG and legal document generation workflows.",
+    tags: ["LegalTech", "RAG", "AI Assistant", "Document Generation"],
+    techStack: ["Python", "FastAPI", "OpenAI", "LangChain", "RAG", "PostgreSQL"],
+    features: [
+      "Automated arbitration complaint drafting.",
+      "Legal document retrieval and grounding.",
+      "Structured complaint generation.",
+      "PDF export and document assembly."
+    ],
+    challenges: [
+      "Maintaining legal formatting consistency.",
+      "Reducing hallucinations in legal content.",
+      "Handling large legal document datasets."
+    ],
+    results: [
+      "Accelerated complaint generation workflows.",
+      "Improved legal drafting consistency.",
+      "Reduced manual preparation effort significantly."
+    ],
+    imageUrl: "/florida_arbitraction_compilant.png"
+  },
+  {
+    id: "twitter-clone",
+    title: "Twitter Clone",
+    role: "Full Stack Developer",
+    shortDescription: "Modern social media platform inspired by Twitter/X.",
+    fullDescription: "Built a full-featured Twitter clone with responsive UI, real-time updates, authentication, tweet management, and social interaction capabilities.",
+    tags: ["Social Media", "Full Stack", "Real-Time"],
+    techStack: ["React", "Next.js", "TypeScript", "NestJS", "PostgreSQL", "Socket.IO"],
+    features: [
+      "Tweet creation and management.",
+      "Following and follower system.",
+      "Real-time notifications and updates.",
+      "Responsive modern UI."
+    ],
+    challenges: [
+      "Implementing scalable real-time communication.",
+      "Managing social graph relationships.",
+      "Optimizing feed performance."
+    ],
+    results: [
+      "Production-quality social media experience.",
+      "Modern responsive design.",
+      "Real-time user engagement features."
+    ],
+    imageUrl: "/twitterclone.png"
+  },
+  {
+    id: "charitag",
+    title: "Charitag - Charity Marketplace",
+    role: "Frontend Developer",
+    shortDescription: "Marketplace platform connecting charities and donors.",
+    fullDescription: "Developed a charity marketplace platform enabling charitable organizations to connect with donors through a secure and transparent donation ecosystem.",
+    tags: ["Marketplace", "FinTech", "Charity", "Frontend"],
+    techStack: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    features: [
+      "Organization and donor profiles.",
+      "Donation tracking and reporting.",
+      "Responsive user experience.",
+      "Secure donation workflows."
+    ],
+    challenges: [
+      "Creating trust-focused user experiences.",
+      "Managing donation workflow complexity.",
+      "Optimizing platform usability."
+    ],
+    results: [
+      "Improved donor engagement.",
+      "Streamlined donation management.",
+      "Professional and accessible UI."
+    ],
+    imageUrl: "/charitag.png"
   }
 ];
