@@ -17,7 +17,7 @@ const Skills = () => {
           <div className="w-20 h-1 bg-primary rounded"></div>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {SKILLS.map((category, idx) => (
             <motion.div
               key={category.name}

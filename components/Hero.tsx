@@ -32,7 +32,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-slate-400 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed"
           >
-            Senior Machine Learning Engineer with deep expertise in modern <span className="text-primary">Generative AI</span>, <span className="text-primary">AI Automation</span>, and <span className="text-primary">Big Data Processing</span>. I bridge the gap between cutting-edge research and scalable production systems.
+            Senior Machine Learning & Full-Stack Engineer with deep expertise in modern <span className="text-primary">Generative AI</span>, <span className="text-primary">AI Automation</span>, and <span className="text-primary">Full-Stack Applications</span>. I bridge the gap between cutting-edge research and scalable production systems.
           </motion.p>
 
           <motion.div

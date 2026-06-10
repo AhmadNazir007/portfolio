@@ -20,6 +20,10 @@ export const SKILLS: SkillCategory[] = [
   {
     name: "Data & Tools",
     skills: ["PostgreSQL", "MongoDB", "Git", "Seaborn", "Scikit-learn", "OpenCV", "Pandas", "NumPy"]
+  },
+  {
+    name: "Web Development",
+    skills: ["React.js", "Next.js", "Nest.js", "HTML", "CSS", "JavaScript", "Bootstrap"]
   }
 ];
 
