@@ -32,7 +32,7 @@ export const EXPERIENCE: Experience[] = [
     id: "solgenci",
     company: "Visionerds",
     role: "AI Full Stack Engineer",
-    period: "January 2025 - Present",
+    period: "January 2024 - Present",
     description: [
       "Specializing in developing advanced, scalable AI-driven solutions using OpenAI, LangChain, and RAG pipelines.",
       "Developed an interpretable ML model using Scikit-learn, CatBoost, Lifelines, FBProphet, FAISS, and SHAP, ensuring it meets business monotonicity constraints.",
@@ -43,9 +43,9 @@ export const EXPERIENCE: Experience[] = [
   },
   {
     id: "senarios",
-    company: "Visionerds",
+    company: "Veteranlogix",
     role: "Full Stack Developer",
-    period: "January 2024 - December 2024",
+    period: "January 2022 - December 2023",
     description: [
       "Frontend / Full-Stack Developer with experience in building scalable and responsive web applications using React.js, Next.js, and Tailwind CSS.",
       "Developed production-ready projects with a focus on performance, SEO optimization, and modern JavaScript (ES6+).",
@@ -54,18 +54,16 @@ export const EXPERIENCE: Experience[] = [
     ],
     tech: ["React", "Next.js", "Tailwind CSS", "NestJS", "TypeScript", "Node.js", "PostgreSQL", "MongoDB", "Git", "Seaborn", "Scikit-learn", "OpenCV", "Pandas", "NumPy"]
   },
-  // {
-  //   id: "ml1",
-  //   company: "Machine Learning 1",
-  //   role: "Junior Data Scientist",
-  //   period: "2019 - 2021",
-  //   description: [
-  //     "Led the development of a customer support Voicebot reducing latency to 3-4 seconds.",
-  //     "Worked on Text-to-Image models (Stable Diffusion) for website design automation.",
-  //     "Built Document Understanding Transformers for automated invoice processing."
-  //   ],
-  //   tech: ["Voice AI", "Stable Diffusion", "OCR", "Twilio"]
-  // }
+     {
+       id: "ml1",
+      company: "Pixel2Graphic",
+      role: "Frontend Developer",
+     period: "January 2021 -  December 2021",
+       description: [
+        "I started my career in web development and progressed into frontend development, building responsive and user-friendly web applications. Gained hands-on experience with React.js, Next.js, JavaScript, HTML, CSS, Tailwind CSS, and modern frontend development practices, with a focus on performance, responsiveness, and user experience."
+     ],
+     tech: ["HTML", "CSS", "JS", "REACT"]
+    }
 ];
 
 export const PROJECTS: Project[] = [
