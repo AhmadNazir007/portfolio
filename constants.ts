@@ -52,7 +52,7 @@ export const EXPERIENCE: Experience[] = [
       "Collaborated with designers, product managers, and backend teams to deliver high-quality user interfaces.",
       "Also contributed on the backend using NestJS to build RESTful APIs, authentication systems, and integrate frontend with backend services."
     ],
-    tech: ["React", "Next.js", "Tailwind CSS", "NestJS", "TypeScript", "Node.js", "PostgreSQL", "MongoDB", "Git", "Seaborn", "Scikit-learn", "OpenCV", "Pandas", "NumPy"]
+    tech: ["React", "Next.js", "Tailwind CSS", "NestJS", "TypeScript", "Node.js", "PostgreSQL", "MongoDB", "Git", "REST APIs", "Docker"]
   },
      {
        id: "ml1",
@@ -62,7 +62,7 @@ export const EXPERIENCE: Experience[] = [
        description: [
         "I started my career in web development and progressed into frontend development, building responsive and user-friendly web applications. Gained hands-on experience with React.js, Next.js, JavaScript, HTML, CSS, Tailwind CSS, and modern frontend development practices, with a focus on performance, responsiveness, and user experience."
      ],
-     tech: ["HTML", "CSS", "JS", "REACT"]
+     tech: ["HTML", "CSS", "JS", 'Bootstrap', "REACT"]
     }
 ];
 
